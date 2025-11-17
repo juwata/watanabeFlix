@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: "NetflixSans";
+    font-weight: normal;
+    src: url('../fonts/NetflixSans-Regular.otf');
+}
+
+@font-face {
+    font-family: "NetflixSansB";
+    font-weight: bold;
+    src: url('../fonts/NetflixSans-Bold.otf');
+}
+
+::-webkit-scrollbar {display: none}
+
+:root {
+    --fontTitle: "Bebas Neue";
+    --fontText: "NetflixSans";
+    --fontTextB: "NetflixSansB";
+
+    --color01: #FFFFFF;
+    --color02: #E50914;
+    --color03: #141414;
+    --color04: #808080;
+}
+
+* {
+    margin: 0; padding: 0; border: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--color03);
+    font-family: var(--fontText);
+    color: white;
+    position: relative;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    padding: 20px 40px;
+    background: linear-gradient(#00000084, transparent 25%);
+    /* background: transparent; */
+    z-index: 1;
+}
+
+header > h1 {
+    font: 2em var(--fontTitle);
+    color: var(--color02);
+}
+
+header > ul {
+    font-size: 0.9em;
+    margin-left: 15px;
+    list-style-type: none;
+    display: flex;
+    width: 250px;
+    justify-content: space-around;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+
+div.background {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/home/splash/onePiece.jpg) center no-repeat;
+    background-size: cover;
+}
+
+div.background > section {
+    position: absolute;
+    top: 260px;
+    left: 60px;
+}
+
+div.background img {
+    width: 300px;
+}
+
+div.background p {
+    width: 400px;
+    margin-top: -20px;
+    margin-bottom: 15px;
+}
+
+div.background input {
+    margin-top: 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+main {
+    margin: 70px auto;
+    width: 1400px;
+}
+
+main section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 70px;
+}
+    
+main img {
+    width: 270px;
+    border-radius: 5px;
+}
+
+section img {
+    transition: 300ms;
+}
+
+section img:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    color: var(--color01);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 200px;
+}
+
+p#soon {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}

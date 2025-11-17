@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: "NetflixSans";
+    font-weight: normal;
+    src: url('../fonts/NetflixSans-Regular.otf');
+}
+
+@font-face {
+    font-family: "NetflixSansB";
+    font-weight: bold;
+    src: url('../fonts/NetflixSans-Bold.otf');
+}
+
+:root {
+    --fontTitle: "Bebas Neue";
+    --fontText: "NetflixSans";
+    --fontTextB: "NetflixSansB";
+
+    --color03: #141414;
+    --color01: #FFFFFF;
+    --color02: #E50914;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    background: linear-gradient(black 0%, var(--color03) 10%);
+    color: var(--color01);
+    width: 100%;
+    height: 100vh;
+    font-family: var(--fontText);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 3em;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    & p {
+        margin-top: 5px;
+        color: #808080;
+    }
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    list-style-type: none;
+}
+
+input {
+    margin-top: 100px;
+    background: transparent;
+    color: #808080;
+    font-size: 1.1em;
+    padding: 15px 25px;
+    border: 1px solid #808080;
+}
+
+img {
+    border-radius: 5px;
+    border: 4px solid transparent;
+}
+
+
+li img, li p {
+    transition: 400ms;
+}
+li:hover img, li:hover p {
+    border: 4px solid white;
+}
+
+li:hover p {
+    border: 0;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
