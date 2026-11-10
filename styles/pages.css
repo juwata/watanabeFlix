@@ -1,9 +1,4 @@
-@font-face{
-    font-family: 'Bebas Neue';
-    src: url(font/BebasNeue.ttf) format(truetype);
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body{
     margin: 0;
